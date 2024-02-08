@@ -10,19 +10,21 @@ body {
     background-position: center;
 }
 
-.title{
+.title {
   position: relative;
-  top: 30%;
+  top: 50%; /* Adjusted to center vertically */
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center-align text */
 }
 
-.title h1{
+.title h1 {
   color: #fff;
   font-size: 40px;
 }
 
-.btn1, .btn2 {
+.btn1,
+.btn2 {
   position: relative;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -31,6 +33,7 @@ body {
   cursor: pointer;
   transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 .btn1 {
   left: 55%;
 }
@@ -38,6 +41,14 @@ body {
 .btn2 {
   left: 45%;
 }
+
+@media only screen and (max-width: 600px) {
+  .btn1,
+  .btn2 {
+    left: 50%;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   .btn1, .btn2 {
