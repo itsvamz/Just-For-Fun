@@ -10,7 +10,8 @@ document.getElementById("flyButton").addEventListener("click", function() {
   button.style.transform = "translate(" + randomLeft + "px, " + randomTop + "px) rotate(360deg)";
 });
   
-  document.getElementById("yes").addEventListener("click", function() {
-    window.location.href = "go.html";
-  });
-  
+
+document.getElementById("yes").addEventListener("click", function(event) {
+  event.preventDefault(); 
+  window.location.href = "go.html";
+});
